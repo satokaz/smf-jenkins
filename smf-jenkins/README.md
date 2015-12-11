@@ -1,6 +1,9 @@
 # smf-jenkins
 solaris smf manifest for Jenkins
 
+1. create jenkins user (# useradd -m jenkins)
+2. Override JENKINS_HOME in manifest (If necessary)
+3. Service registration to SMF
 ```
 # cp manifest/svc-jenkins /lib/svc/manifest/site
 # cp method/svc-jenkins /lib/svc/method
